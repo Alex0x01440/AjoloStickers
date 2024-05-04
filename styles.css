@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jersey+15&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* color palette:
+    #FFBE98
+    #FEECE2
+    #F7DED0
+    #E2BFB3 */
+
+body{
+    margin: 0;
+    background-color: #FEECE2;
+}
+
+
+.header-bar{
+    background-color: #FFBE98;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000
+}
+
+.grid-ninths {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bar_principal {
+    color: #F7DED0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.header-bar_secondary {
+    color: #FEECE2;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header-logo img{
+    width: auto;
+    max-height: 3em;
+}
+
+.header-logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: right;
+}
+
+.header-bar a{
+    color: #1E7EC8;
+    text-decoration: none;
+}
+
+.header-bar a:hover {
+    text-decoration: underline #F7DED0;
+}
+
+.hero-image{
+    background-image: url('files/hero_image/hero1.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-text{
+    color: #FEECE2;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-secondary{
+    color: #FEECE2;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.hero-image button{
+    color: #FFBE98;
+    background-color: #FEECE2;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.hero-image button:hover{
+    cursor: pointer;
+    color: #FFBE98;
+    background-color: #FEECE2;
+    border: 2px solid #E2BFB3;
+    outline: 0;
+    display: inline-block;
+    padding: 8px 23px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.grid-fourths {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer-bar{
+    background-color: #FFBE98;
+    height: auto;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer-bar_principal {
+    color: #F7DED0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.footer-bar_secondary {
+    color: #FEECE2;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer-logo{
+    display: inline;
+    text-align: right;
+}
+
+.footer-logo img{
+    width: auto;
+    max-height: 8em;
+}
+
+h1 {
+    color: #E2BFB3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
